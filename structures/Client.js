@@ -104,6 +104,22 @@ module.exports = class WeabooClient extends CommandoClient {
 		 */
 		this.ownerId = config.discord.DISCORD_OWNER_ID;
 		
+		
+		/**
+		 * All possible command types
+		 * @type {Object}
+		 */
+		this.types = {
+			INFO: 'info',
+			FUN: 'fun',
+			COLOR: 'color',
+			POINTS: 'points',
+			MISC: 'misc',
+			MOD: 'mod',
+			ADMIN: 'admin',
+			OWNER: 'owner',
+			EMOJI: 'custom-emoji',
+		};
 		/**
 		 * Weaboo's Log IDs
 		 */
